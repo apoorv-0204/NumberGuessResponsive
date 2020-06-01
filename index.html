@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	
+	<title>Number Magic Game</title>
+	<style type="text/css">
+		.vertical-center {
+		  margin: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		}
+		.footer {
+		  position: fixed;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		  background-color: #a3a3a3;
+		  color: white;
+		  text-align: right;
+		}
+		
+	</style>
+
+</head>
+<body style="background-color: #fec5e5 ;">
+	<div class="container">
+		
+	
+
+		<div class="jumbotron" style="background-color: #b39ddb;">
+			<h1 class="text-center" style="color: white;">MAGIC GAME</h1>
+		</div>
+		<div class="row" style="margin-bottom: 20px;">
+		<div style="font-size: large;" >
+			<div class="row" style="margin-bottom: 20px;">
+				<div class="col-sm-12">
+				<p class="old-content text-center">Guess any Number from 1 to 100.<br>If guessed number is displayed in the grid below click YES, else click NO.</p>
+				</div>
+			</div>
+			<div class="row" style="background-color: #b39ddb; ">
+				<div id="content" class=" col-sm-12 col-md-6 col-md-offset-3" style="height: 40vh;"  >
+					<p id="inner-content" class="vertical-center text-center" style="color: white;" >
+						<button style="color: #000;" class="btn" onclick="start()">
+							Start
+						</button>
+						
+
+					</p>
+					
+					
+
+				</div>
+			</div>
+			
+
+		</div>
+
+		</div>
+		<div class="row" style="margin-bottom: 35px;">
+			<div class="col-sm-12" style="text-align: center;">
+				<button id="yes-btn" class="btn" onclick="yes()" disabled>YES</button>
+				<button id="no-btn" class="btn" onclick="no()" disabled>NO</button>
+			</div>
+	</div>
+	<div class="footer">
+	  <p>&copy; Made by Apoorv &nbsp;&nbsp;</p>
+	</div>		
+
+	</div>
+
+
+
+	<script src="script.js">
+		
+
+	</script>
+</body>
+</html>
